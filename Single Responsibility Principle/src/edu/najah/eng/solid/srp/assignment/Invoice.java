@@ -1,5 +1,10 @@
 package edu.najah.eng.solid.srp.assignment;
 
+import edu.najah.eng.solid.srp.assignment.impl.Database;
+import edu.najah.eng.solid.srp.assignment.impl.InvoiceAdding;
+import edu.najah.eng.solid.srp.assignment.impl.InvoiceDeleting;
+import edu.najah.eng.solid.srp.assignment.impl.MailSending;
+
 import java.util.Date;
 
 /**
@@ -17,24 +22,15 @@ public class Invoice {
     }
 
     public void add()  {
-        // connect to database
-        // execute insert command to add new record in database
-        //close the database connection
-        // Once Invoice has been added , send mail
-        MailMessage mailMessage = new MailMessage("MailAddressFrom","MailAddressTo","MailSubject","MailBody");
-        this.sendEmail(mailMessage);
+        InvoiceAdding invoiceAdding = new InvoiceAdding();
+        invoiceAdding.AddInvoice();
     }
     public void delete()  {
-        // connect to database
-        // execute delete command to delete the invoice from the database
-        //close the database connection
+        InvoiceDeleting invoiceDeleting = new InvoiceDeleting();
+        invoiceDeleting.deleteInvoice();
     }
     public void sendEmail(MailMessage mailMessage)  {
-        if (mailMessage.isValidMessage()){
-            // Code for getting Email setting and send invoice mail
-        } else {
-            //show error message for the user
-        }
-
+        MailSending mailSending = new MailSending();
+        mailSending.sendMail(mailMessage);
     }
 }

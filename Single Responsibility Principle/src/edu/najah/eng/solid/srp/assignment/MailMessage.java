@@ -1,46 +1,48 @@
 package edu.najah.eng.solid.srp.assignment;
 
+import edu.najah.eng.solid.srp.assignment.impl.EmailValidate;
+import edu.najah.eng.solid.srp.assignment.intf.Validation;
+
 public class MailMessage {
 
+    public String getMailAddressFrom() {
+        return mailAddressFrom;
+    }
+
     private String mailAddressFrom;
+
+    public String getMailAddressTo() {
+        return mailAddressTo;
+    }
+
     private String mailAddressTo;
+
+    public String getMailSubject() {
+        return mailSubject;
+    }
+
     private String mailSubject;
+
+    public String getMailBody() {
+        return mailBody;
+    }
+
     private String mailBody;
+
+    //this method to validate and create new message
     public MailMessage(String mailAddressFrom, String mailAddressTo, String mailSubject, String mailBody) {
-        //Validate the input (email)
-        if(mailAddressFrom != null && !mailAddressFrom.isEmpty() && mailAddressFrom.contains("@") && mailAddressFrom.contains(".")){
+        EmailValidate emailValidate = new EmailValidate();
+        if (emailValidate.isValid(mailAddressFrom,mailAddressTo,mailSubject,mailBody)) {
             this.mailAddressFrom =  mailAddressFrom;
-        }
-
-        //Validate the input (email)
-        if(mailAddressTo != null && !mailAddressTo.isEmpty() && mailAddressTo.contains("@") && mailAddressTo.contains(".")){
             this.mailAddressTo =  mailAddressTo;
-        }
-
-        //Validate the input
-        if(mailSubject != null && !mailSubject.isEmpty() && mailSubject.length() <= 30){
             this.mailSubject =  mailSubject;
-        }
-
-        //Validate the input
-        if(mailBody != null && !mailBody.isEmpty() ){
             this.mailBody =  mailBody;
         }
     }
 
+    //this method to validate a message
     public boolean isValidMessage(){
-        if(mailAddressFrom == null || mailAddressFrom.isEmpty() || !mailAddressFrom.contains("@") || !mailAddressFrom.contains(".")){
-            return false;
-        }
-        if(mailAddressTo == null ||  mailAddressTo.isEmpty() ||  !mailAddressTo.contains("@") ||  !mailAddressTo.contains(".")){
-            return false;
-        }
-        if(mailSubject == null ||  mailSubject.isEmpty() ||  mailSubject.length() > 30){
-            return false;
-        }
-        if(mailBody == null || mailBody.isEmpty() ){
-            return false;
-        }
-        return true;
+        EmailValidate emailValidate = new EmailValidate();
+        return emailValidate.isValid(mailAddressFrom,mailAddressTo,mailSubject,mailBody);
     }
 }

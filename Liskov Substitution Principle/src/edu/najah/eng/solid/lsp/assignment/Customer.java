@@ -2,12 +2,7 @@ package edu.najah.eng.solid.lsp.assignment;
 
 import java.util.ArrayList;
 
-public class Customer {
-    protected ArrayList<Offer> offers = null;
-
-    public Customer(){
-        offers = new ArrayList<>();
-    }
+public class Customer extends superCustomer{
 
     public ArrayList<Offer> getOffers() {
         ArrayList<Offer> tmpOffers = new ArrayList<>();
@@ -17,6 +12,7 @@ public class Customer {
         return tmpOffers;
     }
 
+    @Override
     public void addOffers(Offer offer) {
         this.offers.add(offer);
     }

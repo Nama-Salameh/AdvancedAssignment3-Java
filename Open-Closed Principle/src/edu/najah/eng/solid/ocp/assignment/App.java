@@ -12,7 +12,7 @@ public class App {
         calculator.addNumber(2);
         calculator.addNumber(9);
         calculator.addNumber(1);
-
+        System.out.println("Numbers : "+ calculator.getNumbers());
         System.out.println("Addition " + calculator.getOperationResult(Operation.Addition));
         System.out.println("Multiplication " + calculator.getOperationResult(Operation.Multiplication));
         System.out.println("Count " + calculator.getOperationResult(Operation.Count));

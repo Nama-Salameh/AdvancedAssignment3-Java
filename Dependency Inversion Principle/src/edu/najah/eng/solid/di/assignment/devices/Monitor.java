@@ -1,11 +1,14 @@
 package edu.najah.eng.solid.di.assignment.devices;
 
-public class Monitor {
+import edu.najah.eng.solid.di.assignment.intf.Turn;
 
+public class Monitor implements Turn {
+    @Override
     public void turnOn(){
         System.out.println("Turn on " + this.getClass().getName());
     }
 
+    @Override
     public void turnOff(){
         System.out.println("Turn off " + this.getClass().getName());
     }
