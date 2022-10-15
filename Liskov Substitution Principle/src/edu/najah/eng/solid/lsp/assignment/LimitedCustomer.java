@@ -6,11 +6,10 @@ public class LimitedCustomer extends superCustomer{
 
     @Override
     public void addOffers(Offer offer) {
-        if (isReachedMaxAllowedOffers()){
-            System.err.println("Limited customer can not add more that " + MAX_ALLOWED_OFFER + " offers" );
+        if (isReachedMaxAllowedOffers()) {
+            System.err.println("Limited customer can not add more that " + MAX_ALLOWED_OFFER + " offers");
             return;
         }
-        super.addOffers(offer);
     }
 
     private boolean isReachedMaxAllowedOffers() {

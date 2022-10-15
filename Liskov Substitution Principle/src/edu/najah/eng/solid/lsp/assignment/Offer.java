@@ -1,4 +1,7 @@
 package edu.najah.eng.solid.lsp.assignment;
 
-public class Offer {
+import java.util.ArrayList;
+
+public abstract class Offer {
+
 }
