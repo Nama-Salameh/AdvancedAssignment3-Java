@@ -1,6 +1,9 @@
 package edu.najah.eng.solid.srp.assignment.impl;
 
-public class InvoiceDeleting extends Database{
+import edu.najah.eng.solid.srp.assignment.intf.IInvoiceDeleting;
+
+public class InvoiceDeleting extends Database implements IInvoiceDeleting {
+    @Override
     public void deleteInvoice(){
         // connect to database
         connectDatabase();;

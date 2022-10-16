@@ -1,9 +1,9 @@
 package edu.najah.eng.solid.is.assignment.types;
 
 import edu.najah.eng.solid.is.assignment.intf.Flying;
-import edu.najah.eng.solid.is.assignment.intf.Molting;
+import edu.najah.eng.solid.is.assignment.intf.IMolting;
 
-public class Eagle implements Flying, Molting {
+public class Eagle implements Flying{
 
     String currentLocation;
     int numberOfFeathers;
@@ -17,9 +17,9 @@ public class Eagle implements Flying, Molting {
         this.currentLocation = "in the air";
     }
 
-    @Override
-    public void molt() {
-
-        this.numberOfFeathers -= 1;
+    public void molt(int numberOfFeathers) {
+        Molting molting = new Molting();
+        molting.molt(numberOfFeathers);
     }
+
 }

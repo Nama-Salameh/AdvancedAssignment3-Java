@@ -16,13 +16,7 @@ public class WindowsMachine {
         keyboard = new Keyboard(); //instance of keyboard class
     }
 
-
     //for changing status to monitor and keyboard
-    /**public IStatusChanging changingStatus;
-    public void changeKeyStatus(boolean status){
-        changingStatus.changeStatus(status);
-    }
-**/
     public KeyboardStatusChanging changeKeyStatus;
     public void changeKeyboardStatus(boolean status){
         changeKeyStatus.changeStatus(status);
