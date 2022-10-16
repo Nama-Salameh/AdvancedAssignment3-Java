@@ -1,4 +1,4 @@
-package edu.najah.eng.solid.is.assignment.types;
+package edu.najah.eng.solid.is.assignment.impl;
 
 import edu.najah.eng.solid.is.assignment.intf.IMolting;
 

@@ -4,7 +4,6 @@ import edu.najah.eng.solid.di.assignment.devices.Keyboard;
 import edu.najah.eng.solid.di.assignment.devices.Monitor;
 import edu.najah.eng.solid.di.assignment.impl.KeyboardStatusChanging;
 import edu.najah.eng.solid.di.assignment.impl.MonitorStatusChanging;
-import edu.najah.eng.solid.di.assignment.intf.IStatusChanging;
 
 public class WindowsMachine {
 
@@ -19,10 +18,11 @@ public class WindowsMachine {
     //for changing status to monitor and keyboard
     public KeyboardStatusChanging changeKeyStatus;
     public void changeKeyboardStatus(boolean status){
-        changeKeyStatus.changeStatus(status);
+        changeKeyStatus.changeStatus(status,keyboard);
     }
     public MonitorStatusChanging changeMonitorStatus;
     public void changemonitorStatus(boolean status){
-        changeMonitorStatus.changeStatus(status);
+        changeMonitorStatus.changeStatus(status,monitor);
     }
 }
+
