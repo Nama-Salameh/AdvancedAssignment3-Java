@@ -28,4 +28,5 @@ public interface IKeyboardStatusChanging {
 public interface IMonitorStatusChanging {
     void changeStatus(boolean Status, Monitor monitor);
 }
-![Dependency Inversion Principle22 drawio](https://user-images.githubusercontent.com/92352860/196273074-1c482abb-d6eb-40f1-9f76-1593a63c8acd.png)
+
+![1Dependency Inversion Principle](https://user-images.githubusercontent.com/92352860/196273474-8fe01b84-4ff4-4f56-b2c9-833d951ec25d.jpg)
