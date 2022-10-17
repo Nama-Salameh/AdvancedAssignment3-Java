@@ -27,12 +27,13 @@ The initial code contains only two classes with all methods that implements it i
 <br />
 So, for solve these problems, 
 <br />  
-- first I deleted sendMail from Invoice class and added it in MailMessage class
+- first I deleted sendMail from Invoice class and added it in MailMessage class.
 <br /> 
-- then I put each method (adding to invoice, deleting from it, send mail and validation) in different classes until I have one reason to edit it. (that reduce dependencies and achieving Single Responsibility principle).
+- Then I put each method (adding to invoice, deleting from it, send mail and validation) in different classes until I have one reason to edit it. (that reduce dependencies and achieving Single Responsibility principle).
+<br /> 
 - - the validation code contains a lot of test cases and when I put it in a different class, I reduced the duplication of test cases and reduce problem when modifying it.
-    <br /> 
-- then create objects related to methods in Invoice and MailMessage classes .
+<br /> 
+- Then create objects related to methods in Invoice and MailMessage classes .
 - - like this in Invoice class :
   public void add()  {
   InvoiceAdding invoiceAdding = new InvoiceAdding();
@@ -48,5 +49,5 @@ So, for solve these problems,
 <br /> 
 Interface Segregation principle, added for each class an interface contains the methods without body , and make classes implements this interfaces and override the methods .
 - And finally :
-  <br />
-I notice in method addingInvoice you adding comments to the body for databases, so I create Interface (the cause of interface --> if we need to add different types of database) for database (IDatabase) and put in this 4 methods (connectDatabase(), insertRecord() , deleteRecord(), closeDatabase()) and implements this interface in a class (Database) and then uses these methods in the codes needed it(delete invoice and add invoice).
+<br />
+- I notice in method addingInvoice you adding comments to the body for databases, so I create Interface (the cause of interface --> if we need to add different types of database) for database (IDatabase) and put in this 4 methods (connectDatabase(), insertRecord() , deleteRecord(), closeDatabase()) and implements this interface in a class (Database) and then uses these methods in the codes needed it(delete invoice and add invoice).
