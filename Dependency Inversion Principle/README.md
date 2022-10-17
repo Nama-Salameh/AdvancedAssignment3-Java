@@ -29,7 +29,4 @@ public interface IMonitorStatusChanging {
     void changeStatus(boolean Status, Monitor monitor);
 }
 
-
-
-![Dependency Inversion Principle2 drawio](https://user-images.githubusercontent.com/92352860/196272368-a7937221-7382-40e3-81d0-3514e54308ad.png)
-
+![Dependency Inversion Principle2 drawio](https://user-images.githubusercontent.com/92352860/196272776-dc3746fc-6f1d-48e1-b84e-13fbf34cde92.png)
