@@ -29,8 +29,5 @@ public class Invoice {
         InvoiceDeleting invoiceDeleting = new InvoiceDeleting();
         invoiceDeleting.deleteInvoice();
     }
-    public void sendEmail(MailMessage mailMessage)  {
-        MailSending mailSending = new MailSending();
-        mailSending.sendMail(mailMessage);
-    }
+
 }

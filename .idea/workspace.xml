@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc844114-e8ad-4a80-851f-6bd61d0784ab" name="Changes" comment="adding new interfaces">
+    <list default="true" id="bc844114-e8ad-4a80-851f-6bd61d0784ab" name="Changes" comment="finall">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/WindowsMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/WindowsMachine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/impl/KeyboardStatusChanging.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/impl/KeyboardStatusChanging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/impl/MonitorStatusChanging.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/impl/MonitorStatusChanging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/intf/IStatusChanging.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/intf/IKeyboardStatusChanging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface Segregation Principle/src/edu/najah/eng/solid/is/assignment/intf/Flying.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interface Segregation Principle/src/edu/najah/eng/solid/is/assignment/intf/IFlying.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface Segregation Principle/src/edu/najah/eng/solid/is/assignment/intf/Swimming.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interface Segregation Principle/src/edu/najah/eng/solid/is/assignment/intf/ISwimming.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface Segregation Principle/src/edu/najah/eng/solid/is/assignment/types/Eagle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interface Segregation Principle/src/edu/najah/eng/solid/is/assignment/types/Eagle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface Segregation Principle/src/edu/najah/eng/solid/is/assignment/types/Molting.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interface Segregation Principle/src/edu/najah/eng/solid/is/assignment/impl/Molting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface Segregation Principle/src/edu/najah/eng/solid/is/assignment/types/Penguin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interface Segregation Principle/src/edu/najah/eng/solid/is/assignment/types/Penguin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Single Responsibility Principle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Single Responsibility Principle/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Single Responsibility Principle/src/edu/najah/eng/solid/srp/assignment/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/Single Responsibility Principle/src/edu/najah/eng/solid/srp/assignment/Invoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Single Responsibility Principle/src/edu/najah/eng/solid/srp/assignment/MailMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Single Responsibility Principle/src/edu/najah/eng/solid/srp/assignment/MailMessage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +173,7 @@
       <workItem from="1665503792442" duration="12606000" />
       <workItem from="1665558889622" duration="3350000" />
       <workItem from="1665565833096" duration="1076000" />
-      <workItem from="1665780765601" duration="46199000" />
+      <workItem from="1665780765601" duration="52781000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1665503896967</created>
@@ -265,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665897848096</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="finall">
+      <created>1665914991763</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665914991763</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +294,8 @@
     <MESSAGE value="SOLID" />
     <MESSAGE value="Final edition" />
     <MESSAGE value="adding new interfaces" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding new interfaces" />
+    <MESSAGE value="finall" />
+    <option name="LAST_COMMIT_MESSAGE" value="finall" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

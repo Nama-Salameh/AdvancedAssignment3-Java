@@ -1,6 +1,7 @@
 package edu.najah.eng.solid.srp.assignment;
 
 import edu.najah.eng.solid.srp.assignment.impl.EmailValidate;
+import edu.najah.eng.solid.srp.assignment.impl.MailSending;
 import edu.najah.eng.solid.srp.assignment.intf.Validation;
 
 public class MailMessage {
@@ -44,5 +45,9 @@ public class MailMessage {
     public boolean isValidMessage(){
         EmailValidate emailValidate = new EmailValidate();
         return emailValidate.isValid(mailAddressFrom,mailAddressTo,mailSubject,mailBody);
+    }
+    public void sendEmail(MailMessage mailMessage)  {
+        MailSending mailSending = new MailSending();
+        mailSending.sendMail(mailMessage);
     }
 }
