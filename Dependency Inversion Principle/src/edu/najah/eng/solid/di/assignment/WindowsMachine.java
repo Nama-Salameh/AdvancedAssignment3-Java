@@ -4,11 +4,15 @@ import edu.najah.eng.solid.di.assignment.devices.Keyboard;
 import edu.najah.eng.solid.di.assignment.devices.Monitor;
 import edu.najah.eng.solid.di.assignment.impl.KeyboardStatusChanging;
 import edu.najah.eng.solid.di.assignment.impl.MonitorStatusChanging;
+import edu.najah.eng.solid.di.assignment.intf.IKeyboard;
+import edu.najah.eng.solid.di.assignment.intf.IKeyboardStatusChanging;
+import edu.najah.eng.solid.di.assignment.intf.IMonitor;
+import edu.najah.eng.solid.di.assignment.intf.IMonitorStatusChanging;
 
 public class WindowsMachine {
 
-    public final Keyboard keyboard;
-    public final Monitor monitor;
+    public final IKeyboard keyboard;
+    public final IMonitor monitor;
 
     public WindowsMachine(){
         monitor = new Monitor();  //instance of monitor class
@@ -16,13 +20,13 @@ public class WindowsMachine {
     }
 
     //for changing status to monitor and keyboard
-    public KeyboardStatusChanging changeKeyStatus;
+    public IKeyboardStatusChanging changeKeyStatus = new KeyboardStatusChanging();
     public void changeKeyboardStatus(boolean status){
-        changeKeyStatus.changeStatus(status,keyboard);
+        changeKeyStatus.changeStatus(status, (Keyboard) keyboard);
     }
-    public MonitorStatusChanging changeMonitorStatus;
+    public IMonitorStatusChanging changeMonitorStatus = new MonitorStatusChanging();
     public void changemonitorStatus(boolean status){
-        changeMonitorStatus.changeStatus(status,monitor);
+        changeMonitorStatus.changeStatus(status, (Monitor) monitor);
     }
 }
 

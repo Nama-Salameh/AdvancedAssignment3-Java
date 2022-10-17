@@ -1,131 +1,41 @@
-# Dependency Inversion Principle
+# Solution ofvDependency Inversion Principle
 
-The Dependency Inversion Principle (DIP) states that high-level modules should not depend on low-level modules; both should depend on abstractions. Abstractions should not depend on details.
+* In the initial solution you create 3 classes and dependent on each other. 
+<br /> such as : windowsMachine class depends on concrete , and the 3 classes having the body in it, 
+which makes it difficult to adding, modifying and understanding the code.
+* So:
+1. First, I created 2 interfaces for Keyboard and monitor to solve the dependency on concrete.
+2. Then, I created also 2 interfaces for changing status one of them for keyboard status (IKeyboardStatusChanging) and the other for monitor status (IMonitorStatusChanging), 
+and implemented these interface by new 2 classes for changing the status, and finally used it in methods in  the windowsMachine class.
 
-<br/>
-In order to implement the new functionality, we create a lower-level Book class and a higher-level Shelf class. The Book class will allow users to see reviews and read a sample of each book they store on their shelves. The Shelf class will let them add a book to their shelf and customize the shelf. For example, observe the below code.
+* The interfaces: 
 
+```java
+public interface IKeyboard {
+    void powerOn();
+    void powerOff();
+}
+
+public interface IMonitor {
+    void turnOn();
+    void turnOff();
+}
+
+public interface IKeyboardStatusChanging {
+    void changeStatus(boolean status, Keyboard keyboard);
+}
+
+public interface IMonitorStatusChanging {
+    void changeStatus(boolean Status, Monitor monitor);
+}
+```
 
 ```java
 
-public class Book {
-
-    void seeReviews() {
-         ...
-    }
-
-    void readSample() {
-         ...
-    }
-}
-
-
-public class Shelf {
-
-     Book book;
-
-     void addBook(Book book) {
-          ...
-     }
-
-     void customizeShelf() {
-          ...
-     }
-}
-
-
 ```
-
-Everything looks fine, but as the high-level Shelf class depends on the low-level Book, the above code violates the Dependency Inversion Principle. This becomes clear when the store asks us to enable customers to add DVDs to their shelves, too. In order to fulfil the demand, we create a new DVD class:
-
 
 ```java
 
-public class DVD {
-
-     void seeReviews() {
-          ...
-     }
-
-     void watchSample() {
-          ...
-     }
-}
-
-
 ```
-
-
-Now, we should modify the Shelf class so that it can accept DVDs, too. However, this would clearly break the Open/Closed Principle too.
-
-<br/>
-
-The solution is to create an abstraction layer for the lower-level classes (Book and DVD). We’ll do so by introducing the Product interface, both classes will implement it. For example, below code demonstrates the concept.
-
-
-
-```java
-
-public interface Product {
-
-    void seeReviews();
-
-    void getSample();
-
-}
-
-public class Book implements Product {
-
-    @Override
-    public void seeReviews() { 
-          ...
-    }
-
-    @Override
-    public void getSample() {
-          ...
-    }
-}
-
-public class DVD implements Product {
-
-    @Override
-    public void seeReviews() { 
-         ...
-    }
-
-    @Override  
-    public void getSample() {
-          ...
-    }
-}
-
-```
-
-Now, Shelf can reference the Product interface instead of its implementations (Book and DVD). The refactored code also allows us to later introduce new product types (for instance, Magazine) that customers can put on their shelves, too.
-
-
-```java
-
-public class Shelf {
-
-    Product product;
-
-    void addProduct(Product product) {
-          ...
-    }
-
-    void customizeShelf() {
-          ...
-    }
-}
-
-```
-
-The above code also follows the Liskov Substitution Principle, as the Product type can be substituted with both of its subtypes (Book and DVD) without breaking the program.
-
-
-
-
 
 

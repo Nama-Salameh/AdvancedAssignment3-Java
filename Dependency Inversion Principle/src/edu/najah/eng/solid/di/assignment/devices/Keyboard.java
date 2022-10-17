@@ -1,8 +1,8 @@
 package edu.najah.eng.solid.di.assignment.devices;
 
-import edu.najah.eng.solid.di.assignment.intf.Power;
+import edu.najah.eng.solid.di.assignment.intf.IKeyboard;
 
-public class Keyboard implements Power {
+public class Keyboard implements IKeyboard {
     @Override
     public void powerOn(){
         System.out.println("Power on " + this.getClass().getName());

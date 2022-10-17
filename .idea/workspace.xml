@@ -4,11 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc844114-e8ad-4a80-851f-6bd61d0784ab" name="Changes" comment="Liskov Substituation Responsibility">
+    <list default="true" id="bc844114-e8ad-4a80-851f-6bd61d0784ab" name="Changes" comment="Interfaces Segregation Responsibility">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface Segregation Principle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Interface Segregation Principle/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface Segregation Principle/src/edu/najah/eng/solid/is/assignment/types/Eagle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interface Segregation Principle/src/edu/najah/eng/solid/is/assignment/types/Eagle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface Segregation Principle/src/edu/najah/eng/solid/is/assignment/types/Penguin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interface Segregation Principle/src/edu/najah/eng/solid/is/assignment/types/Penguin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dependency Inversion Principle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Dependency Inversion Principle/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/WindowsMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/WindowsMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/devices/Keyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/devices/Keyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/devices/Monitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/devices/Monitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/impl/KeyboardStatusChanging.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/impl/KeyboardStatusChanging.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/impl/MonitorStatusChanging.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/impl/MonitorStatusChanging.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/intf/IKeyboardStatusChanging.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/intf/IKeyboardStatusChanging.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/intf/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/intf/IKeyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/intf/Turn.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dependency Inversion Principle/src/edu/najah/eng/solid/di/assignment/intf/IMonitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Liskov Substitution Principle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Liskov Substitution Principle/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Open-Closed Principle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Open-Closed Principle/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Single Responsibility Principle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Single Responsibility Principle/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +184,7 @@
       <workItem from="1665503792442" duration="12606000" />
       <workItem from="1665558889622" duration="3350000" />
       <workItem from="1665565833096" duration="1076000" />
-      <workItem from="1665780765601" duration="64862000" />
+      <workItem from="1665780765601" duration="66610000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1665503896967</created>
@@ -358,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666031456598</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Interfaces Segregation Responsibility">
+      <created>1666034978929</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1666034978929</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +407,8 @@
     <MESSAGE value="Single Responsibility" />
     <MESSAGE value="Open Close Responsibility" />
     <MESSAGE value="Liskov Substituation Responsibility" />
-    <option name="LAST_COMMIT_MESSAGE" value="Liskov Substituation Responsibility" />
+    <MESSAGE value="Interfaces Segregation Responsibility" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interfaces Segregation Responsibility" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

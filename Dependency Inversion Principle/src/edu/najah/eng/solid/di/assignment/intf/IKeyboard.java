@@ -1,6 +1,6 @@
 package edu.najah.eng.solid.di.assignment.intf;
 
-public interface Power {
+public interface IKeyboard {
     void powerOn();
     void powerOff();
 }

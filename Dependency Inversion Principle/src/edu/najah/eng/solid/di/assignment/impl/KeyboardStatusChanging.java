@@ -1,6 +1,5 @@
 package edu.najah.eng.solid.di.assignment.impl;
 
-import edu.najah.eng.solid.di.assignment.WindowsMachine;
 import edu.najah.eng.solid.di.assignment.devices.Keyboard;
 import edu.najah.eng.solid.di.assignment.intf.IKeyboardStatusChanging;
 
