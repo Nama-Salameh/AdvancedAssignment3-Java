@@ -30,5 +30,6 @@ public interface IMonitorStatusChanging {
 }
 
 
-![Dependency Inversion Principle2 drawio](https://user-images.githubusercontent.com/92352860/196272208-84db5f1f-10d1-43f4-8d9d-c59543bb330f.png)
+
+![Dependency Inversion Principle2 drawio](https://user-images.githubusercontent.com/92352860/196272368-a7937221-7382-40e3-81d0-3514e54308ad.png)
 
