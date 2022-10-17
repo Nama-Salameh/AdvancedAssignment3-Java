@@ -26,7 +26,7 @@ public class Vehicle {
 
 * The initial code contains only two classes with all methods that implements it in the same class, and if we need to add or modify anything in this code, we will have to modify the entire class, and we may have problems with it, so I used several classes and Interfaces to solve this problem (having more than one reason to change the class), another problem is the class( MailMessage) contains a lot of test cases, Also we have a problem sendMail is not related directly to Invoice class, should add it in the MailMessage class .
 * So, for solve these problems,
-1. First I deleted sendMail from Invoice class and added it in MailMessage class.
+*1. First I deleted sendMail from Invoice class and added it in MailMessage class.
 2. Then I put each method (adding to invoice, deleting from it, send mail and validation) in different classes until I have one reason to edit it. (that reduce dependencies and achieving Single Responsibility principle).
 - the validation code contains a lot of test cases and when I put it in a different class, I reduced the duplication of test cases and reduce problem when modifying it.
 3. Then create objects related to methods in Invoice and MailMessage classes .
