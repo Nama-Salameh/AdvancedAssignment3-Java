@@ -48,3 +48,5 @@ And this in MailMessage class :
 Interface Segregation principle, added for each class an interface contains the methods without body , and make classes implements this interfaces and override the methods .
 5. And finally :
 I notice in method addingInvoice you adding comments to the body for databases, so I create Interface (the cause of interface: if we need to add different types of database) for database (IDatabase) and put in this 4 methods (connectDatabase(), insertRecord() , deleteRecord(), closeDatabase()) and implements this interface in a class (Database) and then uses these methods in the codes needed it(delete invoice and add invoice).
+![Single Responsibility drawio](https://user-images.githubusercontent.com/92352860/196216807-284d342c-4a71-4a27-9e50-be7a1eb69025.png)
+
