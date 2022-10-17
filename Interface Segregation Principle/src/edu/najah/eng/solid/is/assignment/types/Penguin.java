@@ -2,6 +2,7 @@ package edu.najah.eng.solid.is.assignment.types;
 
 import edu.najah.eng.solid.is.assignment.impl.Molting;
 import edu.najah.eng.solid.is.assignment.impl.Swimming;
+import edu.najah.eng.solid.is.assignment.intf.IMolting;
 import edu.najah.eng.solid.is.assignment.intf.ISwimming;
 
 public class Penguin  {
@@ -13,7 +14,7 @@ public class Penguin  {
     }
 
     public void molt() {
-        Molting molting = new Molting();
+        IMolting molting = new Molting();
         molting.molt(numberOfFeathers);
     }
 
