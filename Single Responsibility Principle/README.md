@@ -30,10 +30,7 @@ So, for solve these problems,
 - - the validation code contains a lot of test cases and when I put it in a different class, I reduced the duplication of test cases and reduce problem when modifying it.
 - Then create objects related to methods in Invoice and MailMessage classes .
 - - like this in Invoice class :
-  public void add()  {
-  InvoiceAdding invoiceAdding = new InvoiceAdding();
-  invoiceAdding.AddInvoice();
-  }
+  ![](../../Invoice.png)
 - - And this in MailMessage class :
     public boolean isValidMessage(){
     EmailValidate emailValidate = new EmailValidate();
