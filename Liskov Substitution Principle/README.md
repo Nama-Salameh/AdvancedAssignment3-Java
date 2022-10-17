@@ -49,6 +49,4 @@ public class LimitedCustomer extends superCustomer
 public class Customer extends superCustomer
 ```
 
-
-
-
+![Liskov Substituation Principle drawio](https://user-images.githubusercontent.com/92352860/196255281-ad633273-9e81-4701-b0bf-02fa6aacffe0.png)
