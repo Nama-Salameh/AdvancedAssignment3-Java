@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc844114-e8ad-4a80-851f-6bd61d0784ab" name="Changes" comment="finall">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Single Responsibility Principle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Single Responsibility Principle/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Single Responsibility Principle/src/edu/najah/eng/solid/srp/assignment/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/Single Responsibility Principle/src/edu/najah/eng/solid/srp/assignment/Invoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Single Responsibility Principle/src/edu/najah/eng/solid/srp/assignment/MailMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Single Responsibility Principle/src/edu/najah/eng/solid/srp/assignment/MailMessage.java" afterDir="false" />
-    </list>
+    <list default="true" id="bc844114-e8ad-4a80-851f-6bd61d0784ab" name="Changes" comment="Single Responsibility" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,7 +168,7 @@
       <workItem from="1665503792442" duration="12606000" />
       <workItem from="1665558889622" duration="3350000" />
       <workItem from="1665565833096" duration="1076000" />
-      <workItem from="1665780765601" duration="52781000" />
+      <workItem from="1665780765601" duration="53188000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1665503896967</created>
@@ -266,7 +261,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665914991763</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Single Responsibility">
+      <created>1666015460144</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1666015460144</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Single Responsibility">
+      <created>1666015651690</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666015651690</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +304,8 @@
     <MESSAGE value="Final edition" />
     <MESSAGE value="adding new interfaces" />
     <MESSAGE value="finall" />
-    <option name="LAST_COMMIT_MESSAGE" value="finall" />
+    <MESSAGE value="Single Responsibility" />
+    <option name="LAST_COMMIT_MESSAGE" value="Single Responsibility" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
