@@ -69,3 +69,4 @@ public class GettingResult2 extends GettingResult {
     }
 }
 ```
+![Open Closed Principle2 drawio](https://user-images.githubusercontent.com/92352860/196235496-653f5ac2-1f3f-4f89-b949-a58348779077.png)
