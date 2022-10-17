@@ -1,27 +1,3 @@
-# Single Responsibility Principle
-
-
-This principle states that a class should only have one responsibility. Furthermore, it should only have one reason to change.
-<br />
-How does this principle help us to build better software? Let's see a few of its benefits:
-<br />
-- Testing – A class with one responsibility will have far fewer test cases.
-- Lower coupling – Less functionality in a single class will have fewer dependencies.
-- Organization – Smaller, well-organized classes are easier to search than monolithic ones.
-
-<br />
-
-For example: The Vehicle class below has three separate responsibilities: reporting, calculation, and database. By applying SRP, we can separate the above class into three classes with separate responsibilities.
-
-```java
-
-public class Vehicle {
-    public void printDetails() {}
-    public double calculateValue() {}
-    public void addVehicleToDB() {}
-}
-
-```
 # Solution for Single Responsibility Principle
 
 * The initial code contains only two classes with all methods that implements it in the same class, and if we need to add or modify anything in this code, we will have to modify the entire class, and we may have problems with it, so I used several classes and Interfaces to solve this problem (having more than one reason to change the class), another problem is the class( MailMessage) contains a lot of test cases, Also we have a problem sendMail is not related directly to Invoice class, should add it in the MailMessage class .
