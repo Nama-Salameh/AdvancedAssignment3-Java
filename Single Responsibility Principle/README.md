@@ -33,11 +33,8 @@ public class Vehicle {
 - like this in Invoice class :
 
 - And this in MailMessage class :
-    public boolean isValidMessage(){
-    EmailValidate emailValidate = new EmailValidate();
-    return emailValidate.isValid(mailAddressFrom,mailAddressTo,mailSubject,mailBody);
-    }
+ 
 4. Also, I applied another principle :
 Interface Segregation principle, added for each class an interface contains the methods without body , and make classes implements this interfaces and override the methods .
 5. And finally :
-I notice in method addingInvoice you adding comments to the body for databases, so I create Interface (the cause of interface --> if we need to add different types of database) for database (IDatabase) and put in this 4 methods (connectDatabase(), insertRecord() , deleteRecord(), closeDatabase()) and implements this interface in a class (Database) and then uses these methods in the codes needed it(delete invoice and add invoice).
+I notice in method addingInvoice you adding comments to the body for databases, so I create Interface (the cause of interface: if we need to add different types of database) for database (IDatabase) and put in this 4 methods (connectDatabase(), insertRecord() , deleteRecord(), closeDatabase()) and implements this interface in a class (Database) and then uses these methods in the codes needed it(delete invoice and add invoice).
