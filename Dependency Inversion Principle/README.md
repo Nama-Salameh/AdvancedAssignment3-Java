@@ -1,4 +1,4 @@
-# Solution ofvDependency Inversion Principle
+# Solution of Dependency Inversion Principle
 
 * In the initial solution you create 3 classes and dependent on each other. 
 <br /> such as : windowsMachine class depends on concrete , and the 3 classes having the body in it, 
@@ -28,14 +28,7 @@ public interface IKeyboardStatusChanging {
 public interface IMonitorStatusChanging {
     void changeStatus(boolean Status, Monitor monitor);
 }
-```
 
-```java
 
-```
-
-```java
-
-```
-
+![Dependency Inversion Principle2 drawio](https://user-images.githubusercontent.com/92352860/196272208-84db5f1f-10d1-43f4-8d9d-c59543bb330f.png)
 
