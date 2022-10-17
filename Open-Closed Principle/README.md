@@ -16,7 +16,7 @@ public class VehicleInfo {
         return vcl.getNumber();  
     }  
   }  
-}
+}}
 
 ```
 
@@ -39,7 +39,7 @@ public class Car extends Truck {
   public double vehicleNumber() {  
     return this.getValue();  
   }
-}
+}}
 
 ```
 
@@ -54,3 +54,18 @@ the first class is calculator: which involves all the operations in it . and thi
 in this way, we don't able to modify on these , but I can be able to add (open for extensions, close for modification)
 if we need to add any operation, we create a new version class that extends the current version and added the operation in this new calculator .
 5. For example, I added new version of calculator and adding in this division operation , this version contains all operation in v1 and division operation.
+
+```java
+public class GettingResult2 extends GettingResult {
+    @Override
+    public int gettingResult(Operation operation, ArrayList<Integer> numbers) {
+        int result = super.gettingResult(operation, numbers);
+
+        if (operation.equals(Operation.Division)) {
+            Division division = new DividingNumbers();
+            return DividingNumbers.divideNumbers(numbers);
+        }
+        return result;
+    }
+}
+```
