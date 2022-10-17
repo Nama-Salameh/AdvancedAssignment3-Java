@@ -30,12 +30,11 @@ So, for solve these problems,
 - - the validation code contains a lot of test cases and when I put it in a different class, I reduced the duplication of test cases and reduce problem when modifying it.
 - Then create objects related to methods in Invoice and MailMessage classes .
 - - like this in Invoice class :
+![Invoice](https://user-images.githubusercontent.com/92352860/196209615-f710b00d-523b-45ff-8fd1-e79510825690.png)
 
 - - And this in MailMessage class :
-    public boolean isValidMessage(){
-    EmailValidate emailValidate = new EmailValidate();
-    return emailValidate.isValid(mailAddressFrom,mailAddressTo,mailSubject,mailBody);
-    }
+   ![MailM](https://user-images.githubusercontent.com/92352860/196210545-46fb03de-ff21-457b-aeaa-4b620fcf5006.png)
+
 - Also, I applied another principle :
 Interface Segregation principle, added for each class an interface contains the methods without body , and make classes implements this interfaces and override the methods .
 - And finally :
