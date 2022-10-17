@@ -23,3 +23,4 @@ public interface IFlying {
 }
 
 ```
+![Interfaces Segregation Principle drawio](https://user-images.githubusercontent.com/92352860/196272634-c0794ea4-4fe6-4f9d-a3d3-b0a57a311bbb.png)
