@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc844114-e8ad-4a80-851f-6bd61d0784ab" name="Changes" comment="Single Responsibility Responsibility">
-      <change beforePath="$PROJECT_DIR$/Dependency Inversion Principle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Dependency Inversion Principle/README.md" afterDir="false" />
+    <list default="true" id="bc844114-e8ad-4a80-851f-6bd61d0784ab" name="Changes" comment="Update README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Liskov Substitution Principle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Liskov Substitution Principle/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Liskov Substitution Principle/src/edu/najah/eng/solid/lsp/assignment/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Liskov Substitution Principle/src/edu/najah/eng/solid/lsp/assignment/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Open-Closed Principle/src/edu/najah/eng/solid/ocp/assignment/impl/DividingNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/Open-Closed Principle/src/edu/najah/eng/solid/ocp/assignment/impl/DividingNumbers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +174,9 @@
       <workItem from="1665503792442" duration="12606000" />
       <workItem from="1665558889622" duration="3350000" />
       <workItem from="1665565833096" duration="1076000" />
-      <workItem from="1665780765601" duration="67411000" />
+      <workItem from="1665780765601" duration="68114000" />
+      <workItem from="1666100294994" duration="1718000" />
+      <workItem from="1666105448904" duration="1846000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1665503896967</created>
@@ -390,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666036865298</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Update README.md">
+      <created>1666037612485</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1666037612485</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,7 +439,8 @@
     <MESSAGE value="Liskov Responsibility" />
     <MESSAGE value="Open-Close Responsibility" />
     <MESSAGE value="Single Responsibility Responsibility" />
-    <option name="LAST_COMMIT_MESSAGE" value="Single Responsibility Responsibility" />
+    <MESSAGE value="Update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

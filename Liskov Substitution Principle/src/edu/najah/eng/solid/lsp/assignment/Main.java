@@ -10,6 +10,12 @@ public class Main {
         customer1.getOffers();
         customer2.getOffers();
         customer2.addOffers(offer);
+        customer2.addOffers(offer);
+        customer2.addOffers(offer);
         customer1.addOffers(offer);
+        customer1.addOffers(offer);
+        customer1.addOffers(offer);
+        customer1.getOffers().size();
+        customer2.getOffers().size();
     }
 }
